@@ -22,9 +22,12 @@
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
-    "flow": "flow"
+    "flow": "flow",
+    "prepublish": "yarn build"
   },
   "dependencies": {
-    "babel-runtime": "^6.23.0"
+    "babel-runtime": "^6.23.0",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
   }
 }

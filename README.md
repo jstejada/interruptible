@@ -25,7 +25,7 @@ To:
 import {asInterruptible, InterruptError} from 'interruptible'
 
 
-async function *interruptibleWork (foo, bar) {
+async function *interruptibleWork (a, b) {
   const foo = yield makeFoo(a, b)  // Use `yield` to indicate that function can be interrupted after this async operation has resolved
 
   // 🚫  If operation is interrupted before this line is reached, execution will stop here.
@@ -72,7 +72,7 @@ function *makeFoo(a, b) {
 }
 
 
-async function *interruptibleWork (foo, bar) {
+async function *interruptibleWork (a, b) {
   const foo = yield makeFoo(a, b)
 
   const result = await processFoo(foo)  // `await` wont stop execution even if operation is interrupted
@@ -87,7 +87,7 @@ keywords:
 
 ```javascript
 
-async function *interruptibleWork (foo, bar) {
+async function *interruptibleWork (a, b) {
   const foo = yield makeFoo(a, b)
               -----
 
