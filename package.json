@@ -1,0 +1,30 @@
+{
+  "name": "interruptible",
+  "version": "0.0.1",
+  "description": "Make functions interruptible",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "browser": "dist/index.umd.js",
+  "repository": "git@github.com:jstejada/interruptible.git",
+  "author": "Juan Tejada <juans.tejada@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "flow-bin": "^0.47.0",
+    "jest": "^20.0.4",
+    "rollup": "^0.42.0",
+    "rollup-plugin-babel": "^2.7.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0"
+  }
+}
