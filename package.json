@@ -8,6 +8,21 @@
   "repository": "git@github.com:jstejada/interruptible.git",
   "author": "Juan Tejada <juans.tejada@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "interruptible",
+    "generators",
+    "functions",
+    "coroutines",
+    "interruptible functions",
+    "interruptible coroutines",
+    "interruptible generators",
+    "interruptible javascript functions",
+    "interrupt execution",
+    "pause",
+    "pause functions",
+    "pause javascript",
+    "pause execution"
+  ],
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
